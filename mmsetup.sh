@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1.1"
+version="0.1.2"
 
 if [ $# -eq 0 ]
 then
@@ -27,7 +27,7 @@ then
     yum update -y
 
     # Basic deps
-    yum install -y epel-release \
+    yum install -y epel-release tree \
     mc nano htop ksh tcsh bc nco \
     ncl sendmail wget curl yum-utils \
     rsync mlocate pigz pgzip bzip2 \
@@ -61,9 +61,10 @@ then
     mysql_upgrade
     systemctl stop mariadb
 
+    echo ""
+    echo "Dependencies are installed."
     echo "MariaDB is not enabled/started. You can do it manually:"
     echo "systemctl enable mariadb ; systemctl start mariadb"
-
     echo "Nginx is not enabled/started. You can do it manually:"
     echo "systemctl enable nginx ; systemctl start nginx"
 fi
