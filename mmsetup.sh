@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1"
+version="0.1.1"
 
 if [ $# -eq 0 ]
 then
@@ -125,8 +125,8 @@ then
 
     echo "If this is first install, add next two lines to ~/.bash_profile"
     echo ""
-    echo "export ANTEY=$localpath to ~/.bash_profile"
-    echo 'export PATH=$ANTEY/BIN:/usr/local/bin:$ANTEY/MET:$ANTEY/GRADS/Contents:$NCARG_ROOT/bin:$PATH to  ~/.bash_profile'
+    echo "export ANTEY=$localpath"
+    echo 'export PATH=$ANTEY/BIN:/usr/local/bin:$ANTEY/MET:$ANTEY/GRADS/Contents:$NCARG_ROOT/bin:$PATH'
     echo ""
     echo "then reload ~/.bash_profile manually:"
     echo "source ~/.bash_profile"
