@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1.2"
+version="0.1.3"
 
 if [ $# -eq 0 ]
 then
@@ -43,7 +43,7 @@ then
 
     # Python3 modules
     pip3.6 install --upgrade pip
-    pip3.6 install pandas matplotlib sqlalchemy pymysql flask
+    pip3.6 install pandas matplotlib sqlalchemy pymysql flask gunicorn
 
     # Upgrade MariaDB
     systemctl stop mariadb
