@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1.4"
+version="0.1.5"
 
 if [ $# -eq 0 ]
 then
@@ -30,7 +30,7 @@ then
     yum install -y epel-release tree \
     mc nano htop ksh tcsh bc nco perl-Env \
     ncl sendmail wget curl yum-utils \
-    rsync mlocate pigz pgzip bzip2 \
+    rsync mlocate pigz bzip2 \
     util-linux perl-XML-LibXML nginx
 
     # Development group
