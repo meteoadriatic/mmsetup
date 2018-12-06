@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1.6"
+version="0.1.7"
 
 if [ $# -eq 0 ]
 then
@@ -86,6 +86,9 @@ then
     echo "OK: Checked item is fine"
     echo "EE: Error, item must be corrected by human"
     echo "WW: Warning, item should be checked out by human"
+    
+    echo "The contents of /etc/hosts file:"
+    cat /etc/hosts
 fi
 
 
