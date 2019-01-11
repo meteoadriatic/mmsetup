@@ -2,7 +2,7 @@
 
 argument=$1
 
-version="0.1.7"
+version="0.1.8"
 
 if [ $# -eq 0 ]
 then
@@ -29,11 +29,11 @@ then
     # Basic deps
     yum install -y epel-release
     
-    yum install -y tree mc nano \
+    yum install -y tree mc nano sendmail \
     htop ksh tcsh bc nco perl-Env \
     ncl sendmail wget curl yum-utils \
-    rsync mlocate pigz bzip2 \
-    util-linux perl-XML-LibXML nginx
+    rsync mlocate pigz bzip2 psmisc \
+    util-linux perl-XML-LibXML nginx 
 
     # Development group
     yum -y groupinstall development
