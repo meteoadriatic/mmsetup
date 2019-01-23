@@ -31,7 +31,7 @@ then
     
     yum install -y tree mc nano sendmail \
     htop ksh tcsh bc nco perl-Env \
-    ncl sendmail wget curl yum-utils \
+    ncl wget curl yum-utils \
     rsync mlocate pigz bzip2 psmisc \
     util-linux perl-XML-LibXML nginx 
 
